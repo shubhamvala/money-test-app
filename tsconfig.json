@@ -1,0 +1,43 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "removeComments": true,
+    "useDefineForClassFields": true,
+    "baseUrl": ".",
+    "typeRoots": ["src/types", "src/node_modules/@types"],
+    "paths": {
+      "@assets": ["src/assets"],
+      "@presentation": ["src/presentation"],
+      "@core": ["src/core"],
+      "@services": ["src/core/services"],
+      "@domain": ["src/domain"],
+      "@data": ["src/data"],
+      "@di": ["src/di"],
+      "@hocs": ["src/presentation/hoc"],
+      "@hooks": ["src/presentation/hook"],
+      "@utils": ["src/presentation/utils"],
+      "@components": ["src/presentation/component"],
+      "@containers": ["src/presentation/container"],
+      "@shared-state": ["src/presentation/shared-state"],
+      "@resources": ["src/presentation/resource"],
+      "@storyboards": ["src/presentation/storyboard"],
+      "@navigation": ["src/presentation/navigation"],
+      "@mocks": ["__mocks__"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "__tests__/**/*",
+    "storybook",
+    "index.js",
+    "react-native.config.js",
+    ".eslintrc.js"
+  ],
+  "exclude": ["tsconfig.json", "babel.config.js"]
+}
