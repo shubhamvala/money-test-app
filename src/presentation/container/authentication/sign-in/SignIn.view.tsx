@@ -44,7 +44,7 @@ const _SignIn: React.FC<SignInProps> = () => {
         </Box>
       </HStack>
     )
-  }, [])
+  }, [grayWhite])
 
   return (
     <Screen>
@@ -129,11 +129,7 @@ const _SignIn: React.FC<SignInProps> = () => {
                   fontWeight={'normal'}
                   color={textTertiary}
                 />
-                <Box
-                  size={'1'}
-                  borderRadius={'xs'}
-                  bg={textDisable}
-                  mx={'1'}></Box>
+                <Box size={'1'} borderRadius={'xs'} bg={textDisable} mx={'1'} />
                 <Text
                   text={'0.0037 ETH '}
                   fontFamily={'body'}

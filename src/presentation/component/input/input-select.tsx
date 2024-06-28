@@ -40,7 +40,6 @@ export const InputSelect: FC<InputSelectProps> = memo(
     dropDownPosition = 'auto',
   }: InputSelectProps) => {
     const {
-      primary,
       backgroundOther90,
       backgroundOther90Str,
       textTertiary,
@@ -93,12 +92,13 @@ export const InputSelect: FC<InputSelectProps> = memo(
           </HStack>
         )
       },
-      [labelField, iconField, imageField, primary, textTertiary],
+      [labelField, iconField, imageField, textTertiary],
     )
 
     return (
       <Box
         px={'1.5'}
+        py={'2'}
         borderColor={divider50}
         bg={backgroundOther90}
         borderRadius={'lg'}
